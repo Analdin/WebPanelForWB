@@ -1,1 +1,1 @@
-# WebPanelForWB
+# WebPanel
