@@ -4,3 +4,25 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Управление аккаунтами</p>
+
+@model List<Account>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.Id</td>
+                <td>@account.Name</td>
+                <td>@account.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
